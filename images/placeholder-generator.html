@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Placeholders para IA Guide</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; background: #f5f5f5; }
+        .placeholder { border: 2px dashed #667eea; padding: 40px; margin: 20px 0; text-align: center; border-radius: 8px; background: white; }
+        .placeholder h3 { color: #667eea; margin-bottom: 10px; }
+        .placeholder p { color: #666; }
+        .dimensions { background: #e8f4fd; padding: 10px; border-radius: 4px; margin: 10px 0; font-family: monospace; }
+    </style>
+</head>
+<body>
+    <h1>Placeholders para Imágenes - IA Guide</h1>
+    
+    <div class="placeholder">
+        <h3>🖼️ Hero Image</h3>
+        <p>Imagen principal para la sección hero</p>
+        <div class="dimensions">1200x600px (2:1 ratio)</div>
+        <p><strong>Contenido:</strong> Visual de IA transformando negocios y sociedad</p>
+        <p><strong>Archivo:</strong> hero-ia.jpg</p>
+    </div>
+    
+    <div class="placeholder">
+        <h3>📊 Infografía de Crecimiento</h3>
+        <p>Gráfico del crecimiento del mercado de IA</p>
+        <div class="dimensions">800x600px (4:3 ratio)</div>
+        <p><strong>Contenido:</strong> Estadísticas de 37% crecimiento anual, 184B dólares</p>
+        <p><strong>Archivo:</strong> stats-growth.jpg</p>
+    </div>
+    
+    <div class="placeholder">
+        <h3>📈 Gráfico de Adopción</h3>
+        <p>Visual de adopción empresarial de IA</p>
+        <div class="dimensions">800x500px (8:5 ratio)</div>
+        <p><strong>Contenido:</strong> 56% líderes adoptando IA, por sectores</p>
+        <p><strong>Archivo:</strong> adoption-chart.jpg</p>
+    </div>
+    
+    <div class="placeholder">
+        <h3>⚖️ Balance Riesgos-Beneficios</h3>
+        <p>Visual equilibrando riesgos y beneficios</p>
+        <div class="dimensions">800x600px (4:3 ratio)</div>
+        <p><strong>Contenido:</strong> Balance visual de pros y contras de IA</p>
+        <p><strong>Archivo:</strong> risks-benefits.jpg</p>
+    </div>
+    
+    <div class="placeholder">
+        <h3>🌐 Open Graph Image</h3>
+        <p>Imagen para redes sociales (Facebook, LinkedIn)</p>
+        <div class="dimensions">1200x630px (1.91:1 ratio)</div>
+        <p><strong>Contenido:</strong> Logo IA Guide con título y subtítulo</p>
+        <p><strong>Archivo:</strong> ia-guide-cover.jpg</p>
+    </div>
+    
+    <div class="placeholder">
+        <h3>🎯 Logo</h3>
+        <p>Logo del sitio para schema markup</p>
+        <div class="dimensions">400x400px (1:1 ratio)</div>
+        <p><strong>Contenido:</strong> Logo "IA Guide" moderno y limpio</p>
+        <p><strong>Archivo:</strong> logo.png</p>
+    </div>
+    
+    <script>
+        // Generar URLs de placeholder reales
+        document.addEventListener('DOMContentLoaded', function() {
+            const placeholders = document.querySelectorAll('.placeholder');
+            const baseUrl = 'https://via.placeholder.com/';
+            
+            const specs = {
+                'hero-ia.jpg': '1200x600/667eea/ffffff?text=Hero+IA+Guide',
+                'stats-growth.jpg': '800x600/28a745/ffffff?text=37%25+Crecimiento+Anual',
+                'adoption-chart.jpg': '800x500/17a2b8/ffffff?text=56%25+Adopción+Empresarial',
+                'risks-benefits.jpg': '800x600/dc3545/ffffff?text=Riesgos+vs+Beneficios',
+                'ia-guide-cover.jpg': '1200x630/667eea/ffffff?text=IA+Guide+-+Guía+Completa',
+                'logo.png': '400x400/667eea/ffffff?text=IA+Guide'
+            };
+            
+            // Este archivo sirve como referencia para crear las imágenes reales
+            console.log('Especificaciones de imágenes cargadas');
+        });
+    </script>
+</body>
+</html>

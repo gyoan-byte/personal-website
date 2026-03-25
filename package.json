@@ -1,0 +1,60 @@
+{
+  "name": "ia-guide",
+  "version": "1.0.0",
+  "description": "Guía completa sobre inteligencia artificial con SEO y GEO optimization",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "python -m http.server 8000 --directory src",
+    "serve": "python -m http.server 8000 --directory src",
+    "build": "echo 'Copying src to docs for GitHub Pages...' && xcopy /E /I /Y src\\* docs\\",
+    "test": "echo 'Running HTML validation...' && npx html-validator docs/index.html",
+    "lint": "echo 'Running HTML linter...' && npx htmlhint src/**/*.html",
+    "validate": "echo 'Validating HTML structure...' && npx html-validate src/index.html",
+    "optimize": "echo 'Optimizing images...' && npx imagemin assets/img/* --out-dir=assets/img/optimized",
+    "deploy": "npm run build && echo 'Ready for GitHub Pages deployment'",
+    "dev": "python -m http.server 8000 --directory src",
+    "preview": "python -m http.server 8001 --directory docs"
+  },
+  "keywords": [
+    "inteligencia artificial",
+    "IA",
+    "machine learning",
+    "IA generativa",
+    "SEO",
+    "GEO",
+    "ChatGPT",
+    "guía IA",
+    "Killerfozx",
+    "Yoan"
+  ],
+  "author": "Yoan (KillerFox)",
+  "company": "Killerfozx Company",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/killerfozx/ia-guide"
+  },
+  "homepage": "https://killerfozx.com/ia-guide",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "html-validator": "^7.2.0",
+    "htmlhint": "^1.1.4",
+    "html-validate": "^8.9.0",
+    "imagemin": "^8.0.1",
+    "imagemin-cli": "^7.0.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11"
+  ],
+  "directories": {
+    "src": "src",
+    "assets": "assets",
+    "docs": "docs",
+    "config": "config"
+  }
+}

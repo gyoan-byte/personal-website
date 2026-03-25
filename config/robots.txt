@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# Priorizar páginas importantes
+Allow: /#que-es
+Allow: /#casos-exito
+Allow: /#practicas
+Allow: /#ventajas
+Allow: /#riesgos
+Allow: /#responsable
+Allow: /#futuro
+
+# Bloquear archivos temporales y de sistema
+Disallow: /temp/
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /*.json$
+
+# Sitemap
+Sitemap: https://localhost:8000/sitemap.xml
+
+# Tiempo de crawl (crawl-delay opcional)
+# Crawl-delay: 1
